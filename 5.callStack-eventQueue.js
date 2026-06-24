@@ -1,4 +1,6 @@
 //call stack -LIFO
+//Event Loop: Moves tasks from queue → stack
+
 function one() {
     two();
     console.log(1);

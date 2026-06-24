@@ -103,6 +103,48 @@ Feature         setTimeout          setInterval
 Runs            Once                Repeatedly
 Cancel          clearTimeout()      clearInterval()
 Use case        Delay an action     Clock, polling, animation
+
 -----------------------------------------------------------
+------------------------------------------------------------
+Event Loop in JavaScript:
+Simple Idea:
+JavaScript is single-threaded — it can do only one thing at a time. But it can handle async tasks (like timers, API calls) without freezing. That's the job of the Event Loop.
+
+//The Event Loop watches the Call Stack and Callback Queue — if the stack is empty, 
+it pushes the next task in.
+
+1. JS runs code line by line (Call Stack)
+2. Async tasks go to Web API (setTimeout, fetch)
+3. When done, they move to Queue
+4. Event Loop checks: is Call Stack empty?
+5. If yes → push next task from Queue to Stack
+6. Microtasks (Promises) always run before Callbacks (setTimeout)
+
+
+--------------------------------------------------------------
+Hot Code -> Code that runs repeatedly
+
+JIT -> Compile code WHILE it's running 
+//Simple Analogy
+Imagine translating a book from Bengali to English.
+
+Interpreter = translate one sentence, read it, then next sentence
+Compiler = translate the whole book first, then read
+JIT = translate only the pages you're actually reading, and memorize repeated pages
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -71,8 +71,21 @@ JavaScript is a single-threaded language.
 
 // Single-threaded means JavaScript has one main thread and can execute only one piece of JavaScript code at a time.
 
-// Imagine a cashier with one checkout counter:
----------------------------------------------------------
+// Imagine a cashier with one checkout counter.
 
+
+---------------------------------------------------------
+//promise:
+A Promise is a JavaScript object that represents the eventual success or failure of an asynchronous operation. It has three states: Pending, Fulfilled, and Rejected, and its result is handled using .then(), .catch(), or async/await.
+
+Concept      Meaning 
+Promise      A future  value — success or failure (3 state: pending, success, failure)
+resolve      Call when task succeeds ✅
+reject       Call when task fails ❌
+.then()      Runs on success
+.catch()     Runs on failure
+async/await  Cleaner syntax for promises
+
+---------------------------------------------------------
 
 

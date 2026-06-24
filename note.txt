@@ -92,6 +92,17 @@ Function        Meaning
 setTimeout      Run code once after a delay
 setInterval     Run code repeatedly at a fixed time gap
 
+// JS is single-threaded — it runs one thing at a time. 
+So timers don't block code. They go to the Web API, wait there, then come back via the callback queue.
+
+
+//setTimeout vs setInterval in JS:
+ 
+Feature         setTimeout          setInterval
+-------------------------------------------------
+Runs            Once                Repeatedly
+Cancel          clearTimeout()      clearInterval()
+Use case        Delay an action     Clock, polling, animation
 -----------------------------------------------------------
 
 

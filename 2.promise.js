@@ -19,5 +19,16 @@ promiseValue
 fetch("https://jsonplaceholder.typicode.com/posts/1") // promise
     .then(res => res.json())                          // pending
     .then(data => console.log(data))                  // success
-    .catch(err=>console.log(err))                     // rejected
+    .catch(err => console.log(err))                     // rejected
 
+
+//async/await: more cleaner way:
+
+const result = async () => {
+    let url = "https://jsonplaceholder.typicode.com/posts/2"
+
+    const response = await fetch(url);
+    const value = await response.json()
+    console.log(value)
+}
+result();

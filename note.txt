@@ -86,6 +86,12 @@ reject       Call when task fails ❌
 .catch()     Runs on failure
 async/await  Cleaner syntax for promises
 
----------------------------------------------------------
+-----------------------------------------------------------
+
+Function        Meaning
+setTimeout      Run code once after a delay
+setInterval     Run code repeatedly at a fixed time gap
+
+-----------------------------------------------------------
 
 

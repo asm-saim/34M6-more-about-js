@@ -1,0 +1,78 @@
+//Wht really JS?
+JavaScript is a high-level, dynamically typed, multi-paradigm programming language that uses Just-In-Time (JIT) compilation and automatic garbage collection to provide efficient execution while abstracting away low-level memory management.
+
+//JavaScript (JS) is a lightweight, interpreted programming language primarily used to make web pages interactive and dynamic.
+
+1. What is JIT (Just-In-Time Compilation)?
+
+JavaScript is often called an interpreted language, but modern JavaScript engines (like Chrome's V8) actually use JIT (Just-In-Time) compilation.
+
+Without JIT
+
+A traditional interpreter executes code line by line.
+This is flexible but slower.
+
+With JIT
+
+The engine first interprets the code, notices which parts run frequently, and then compiles those parts into machine code.
+
+Example:
+
+for (let i = 0; i < 1000000; i++) {
+    console.log(i);
+}
+
+Since this loop runs many times, the engine compiles it into optimized machine code, making it much faster.
+
+Why JIT?
+Faster execution
+Better performance
+Optimization while the program is running.
+
+
+-------------------------------------------------------------------
+
+Quick Interview Answer
+JavaScript Engine: A program that executes JavaScript code.
+V8: Google's JavaScript engine used in Chrome and Node.js.
+Execution Context: A workspace where JavaScript stores variables, functions, and execution information while running code.
+Call Stack: A stack that tracks which execution context (function) is currently running, following the Last In, First Out (LIFO) principle.
+
+Remember this flow:
+
+Write JavaScript
+        ↓
+V8 Engine reads it
+        ↓
+Creates an Execution Context
+        ↓
+Uses the Call Stack to manage function calls
+        ↓
+Executes the program
+---------------------------------------------------------------------------
+Q.Is JavaScript synchronous or asynchronous?
+
+Short answer:
+//JavaScript is synchronous by default, but it can perform asynchronous operations using browser or runtime APIs.
+
+//Synchronous JavaScript: Synchronous means the code runs one line at a time, in order. The next line waits until the current line finishes.
+
+//Asynchronous JavaScript
+
+Some operations take time, such as:
+
+Fetching data from an API
+Reading a file
+Waiting with setTimeout()
+
+
+Q.Is JavaScript single-threaded? Yes.
+JavaScript is a single-threaded language.
+
+// Single-threaded means JavaScript has one main thread and can execute only one piece of JavaScript code at a time.
+
+// Imagine a cashier with one checkout counter:
+---------------------------------------------------------
+
+
+
